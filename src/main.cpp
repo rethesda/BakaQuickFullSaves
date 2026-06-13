@@ -45,11 +45,10 @@ namespace Hooks
 			}
 		}
 
-		inline static REL::Hook _Hook0{ REL::ID(98691), 0xD5, Quicksave };
+		inline static REL::THook _Hook0{ REL::ID(98691), 0xD5, Quicksave };
 	}
 
-	class hkQuickSaveLoadHandler :
-		public REX::Singleton<hkQuickSaveLoadHandler>
+	class hkQuickSaveLoadHandler
 	{
 	private:
 		static bool LoadMostRecent()
@@ -82,7 +81,7 @@ namespace Hooks
 			return _Hook0(a_this, a_event);
 		}
 
-		inline static REL::HookVFT _Hook0{ RE::VTABLE::QuickSaveLoadHandler[0], 0x08, HandleEvent };
+		inline static REL::THookVFT _Hook0{ RE::VTABLE::QuickSaveLoadHandler[0], 0x08, HandleEvent };
 	};
 }
 
