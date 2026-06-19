@@ -45,7 +45,7 @@ namespace Hooks
 			}
 		}
 
-		inline static REL::THook _Hook0{ REL::ID(98691), 0xD5, Quicksave };
+		inline static REL::THook _Hook0{ REL::ID(98691), 0xDA, Quicksave };
 	}
 
 	class hkQuickSaveLoadHandler
